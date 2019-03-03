@@ -24,11 +24,15 @@ public class MesoInherit extends MesoAbstract
 	   floor = (int) sum;
 	   ceiling = (int) Math.round(sum);
 	   
+	   /*
+	    * If the floor is the same as the ceiling, then the number was rounded down.
+	    */
 	   if (floor == ceiling) 
 	   {
 		   ceiling++;
 		   average = floor;
 	   }
+	 
 	   else 
 	   {
 		   average = ceiling;
