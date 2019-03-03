@@ -20,7 +20,14 @@ public class MesoInherit extends MesoAbstract
 		   sum+= (int) station[i];
 	   }
 	   
+	   //Find the average
 	   sum = sum/STATION_LENGTH;
+	   
+	   /*
+	    * Here we use two different rounding methods to determine the floor and ceiling, truncation and Math.round.
+	    * Math.round will round to the nearest integer, while truncation does exactly what it says on the tin.
+	    */
+	   
 	   floor = (int) sum;
 	   ceiling = (int) Math.round(sum);
 	   
