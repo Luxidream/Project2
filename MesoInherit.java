@@ -70,7 +70,9 @@ public class MesoInherit extends MesoAbstract
    
    public char getLetter()
    {
-	   
+	   /*
+	    * First, we use the previous method to obtain the average for this station.
+	    */
 	   
 	   int[] intArr = this.getAvg();
 	   
