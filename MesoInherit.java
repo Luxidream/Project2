@@ -1,1 +1,51 @@
-//TODO
+public class MesoInherit extends MesoAbstract
+{
+	
+	public MesoInherit(MesoStation meso)
+	{
+		super(meso);
+	}
+	
+   public int[] getAvg()
+   {
+	   int floor; 
+	   int ceiling;
+	   int average;
+	   
+	   double sum = 0;
+	   
+	   char[] station  = MesoStat.toCharArray();
+	   for (int i = 0; i < STATION_LENGTH; i++) 
+	   {
+		   sum+= (int) station[i];
+	   }
+	   
+	   sum = sum/STATION_LENGTH;
+	   floor = (int) sum;
+	   ceiling = (int) Math.round(sum);
+	   
+	   if (floor == ceiling) 
+	   {
+		   ceiling++;
+		   average = floor;
+	   }
+	   else 
+	   {
+		   average = ceiling;
+	   }
+	   
+	   int[] intArr = new int[3];
+	   intArr[0] = ceiling;
+	   intArr[1] = floor;
+	   intArr[2] = average;
+	   
+	   return intArr;
+   }
+   
+   public char getLetter()
+   {
+	   int[] intArr = this.getAvg();
+	   char average = (char) intArr[2];
+	   return average;
+   }
+}//TODO
