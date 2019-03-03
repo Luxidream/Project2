@@ -62,6 +62,10 @@ public class MesoInherit extends MesoAbstract
    
    public char getLetter()
    {
+	   /*
+	    * This can be easily completed by typecasting the average to a character.
+	    */
+	   
 	   int[] intArr = this.getAvg();
 	   char average = (char) intArr[2];
 	   return average;
