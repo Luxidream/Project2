@@ -28,6 +28,9 @@ public class MesoInherit extends MesoAbstract
 	    * Math.round will round to the nearest integer, while truncation does exactly what it says on the tin.
 	    */
 	   
+	   System.out.print("Sum: ");
+	   System.out.println(sum);
+	   
 	   floor = (int) sum;
 	   ceiling = (int) Math.round(sum);
 	   
