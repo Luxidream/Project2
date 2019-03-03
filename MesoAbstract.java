@@ -8,7 +8,7 @@ public abstract class MesoAbstract
    {
 	 MesoStat = meso.getStID();  
    }
-   
+   //MesoInherit will implement these abstract methods
    public abstract int[] getAvg();
    public abstract char getLetter();
 
