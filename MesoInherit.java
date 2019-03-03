@@ -19,7 +19,7 @@ public class MesoInherit extends MesoAbstract
 	   
 	   /*
 	    * Convert the station ID to a char array. We then iterate over the char array, typecasting each value to an 
-	    * int and adding to a sum.
+	    * int and incrementing a "sum" variable by these values.
 	    */
 	   
 	   char[] station  = MesoStat.toCharArray();
