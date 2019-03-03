@@ -35,10 +35,15 @@ public class MesoInherit extends MesoAbstract
 	   /*
 	    * Otherwise, it was rounded up, and the correct average should be so as well.
 	    */
+	   
 	   else 
 	   {
 		   average = ceiling;
 	   }
+	   
+	   /*
+	    * Assign values to int array before returning
+	    */
 	   
 	   int[] intArr = new int[3];
 	   intArr[0] = ceiling;
