@@ -4,7 +4,7 @@ public class MesoInherit extends MesoAbstract
 	public MesoInherit(MesoStation meso)
 	{
 		/*
-		 * The abstract class's constructor handles this
+		 * The abstract class's constructor handles this by assigning a value to MesoStat
 		 */
 		super(meso);
 	}
