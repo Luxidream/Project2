@@ -17,6 +17,11 @@ public class MesoInherit extends MesoAbstract
 	   
 	   double sum = 0;
 	   
+	   /*
+	    * Convert the station ID to a char array. We then iterate over the char array, typecasting each value to an 
+	    * int and adding to a sum.
+	    */
+	   
 	   char[] station  = MesoStat.toCharArray();
 	   for (int i = 0; i < STATION_LENGTH; i++) 
 	   {
