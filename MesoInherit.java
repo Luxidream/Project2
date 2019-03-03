@@ -23,6 +23,7 @@ public class MesoInherit extends MesoAbstract
 	    */
 	   
 	   char[] station  = MesoStat.toCharArray();
+	   
 	   for (int i = 0; i < STATION_LENGTH; i++) 
 	   {
 		   sum+= (int) station[i];
@@ -61,6 +62,7 @@ public class MesoInherit extends MesoAbstract
 	    */
 	   
 	   int[] intArr = new int[3];
+	   
 	   intArr[0] = ceiling;
 	   intArr[1] = floor;
 	   intArr[2] = average;
