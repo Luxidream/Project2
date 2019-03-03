@@ -4,7 +4,7 @@ public class Main
 {
 	public static void main(String[] args) throws IOException 
 	{
-		String StID = "OKCE";
+		String StID = "CDDE";
 		MesoInherit mesoinherit = new MesoInherit(new MesoStation(StID));
 		
 		System.out.println("Ascii Ceiling is: " + mesoinherit.getAvg()[0]
