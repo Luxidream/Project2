@@ -32,7 +32,9 @@ public class MesoInherit extends MesoAbstract
 		   ceiling++;
 		   average = floor;
 	   }
-	 
+	   /*
+	    * Otherwise, it was rounded up, and the correct average should be so as well.
+	    */
 	   else 
 	   {
 		   average = ceiling;
